@@ -1,0 +1,9 @@
+:host {
+  position: relative;
+  display: flex;
+  gap: 0.5vmin;
+  justify-content: flex-end;
+  background-color: var(--pc-purple);
+  color: var(--pc-purple);
+  padding: 1vmin 2vmin;
+}

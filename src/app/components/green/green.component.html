@@ -1,0 +1,29 @@
+<div class="bonuses">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span class="bonus-marker">+1</span>
+  <span></span>
+  <span class="bonus-marker blue">&#10006;</span>
+  <span class="fox"></span>
+  <span></span>
+  <span class="bonus-marker purple">6</span>
+  <span class="bonus-marker "></span>
+  <span></span>
+</div>
+<div class="points">
+  <span class="point-marker green">1</span>
+  <span class="point-marker green">3</span>
+  <span class="point-marker green">6</span>
+  <span class="point-marker green">10</span>
+  <span class="point-marker green">15</span>
+  <span class="point-marker green">21</span>
+  <span class="point-marker green">28</span>
+  <span class="point-marker green">36</span>
+  <span class="point-marker green">45</span>
+  <span class="point-marker green">55</span>
+  <span class="point-marker green">66</span>
+</div>
+<app-selectable-box *ngFor="let box of boxes" [selected]="box.selected">
+  &geq;{{ box.value }}
+</app-selectable-box>

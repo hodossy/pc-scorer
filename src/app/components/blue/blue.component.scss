@@ -1,0 +1,111 @@
+:host {
+  display: flex;
+  background-color: var(--pc-blue);
+  flex-direction: column;
+  padding: 1.5vmin;
+  aspect-ratio: 1/1;
+  gap: 1vmin;
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: min-content auto;
+  gap: 3vmin;
+  flex-grow: 1;
+
+  .board {
+    position: relative;
+
+    .box-grid {
+      display: grid;
+      grid-template-columns: min-content min-content min-content min-content;
+      grid-row-columns: min-content min-content min-content min-content;
+      gap: 1vmin;
+    }
+
+    .arrows {
+      position: absolute;
+      width: calc(100% + 3vmin);
+      height: calc(100% + 3vmin);
+
+      div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+      }
+
+      .horizontal {
+        flex-direction: column;
+        max-height: 24.5vmin;
+
+        app-arrow {
+          width: 100%;
+          height: 3.5vmin;
+
+          &:first-child {
+            width: 66%;
+          }
+        }
+      }
+
+      .vertical {
+        max-width: 33vmin;
+
+        app-arrow {
+          height: 100%;
+          width: 3.5vmin;
+
+          &:first-child {
+            height: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .bonus-container {
+    background-color: var(--pc-blue-light);
+    border-radius: 1vmin;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    * {
+      width: 4vmin;
+      height: 4vmin;
+      line-height: 4vmin;
+      font-size: 2.25vmin;
+    }
+  }
+
+  .vertical-bonuses {
+    flex-direction: column;
+  }
+}
+
+.scores {
+  background-color: var(--pc-blue-dark);
+  border-radius: 1vmin;
+  height: 7.5vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--pc-white);
+  font-weight: 900;
+  text-align: center;
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  span {
+    width: 3vmin;
+    height: 3vmin;
+    line-height: 3vmin;
+  }
+}

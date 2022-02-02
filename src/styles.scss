@@ -1,1 +1,107 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --pc-white: white;
+  --pc-grey-light: #e2e2e2;
+  --pc-grey: #bbb;
+  --pc-grey-dark: #888;
+  --pc-black-light: #555;
+  --pc-black: #222;
+  --pc-yellow-light: lightyellow;
+  --pc-yellow: gold;
+  --pc-blue-light: lightblue;
+  --pc-blue: blue;
+  --pc-blue-dark: navy;
+  --pc-green: darkgreen;
+  --pc-orange: darkorange;
+  --pc-purple: indigo;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.bonus-marker {
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid var(--pc-white);
+  color: var(--pc-white);
+  background-color: var(--pc-black);
+  text-align: center;
+  font-weight: 900;
+}
+
+.blue {
+  background-color: var(--pc-blue);
+  color: var(--pc-white);
+}
+
+.green {
+  background-color: var(--pc-green);
+  color: var(--pc-white);
+}
+
+.orange {
+  background-color: var(--pc-orange);
+  color: var(--pc-white);
+}
+
+.yellow {
+  background-color: var(--pc-yellow);
+  color: var(--pc-black);
+}
+
+.purple {
+  background-color: var(--pc-purple);
+  color: var(--pc-white);
+}
+
+.fox {
+  background-image: url('assets/svgs/fox.svg');
+}
+
+.star {
+  background-image: url('assets/svgs/star.svg');
+  background-position: center;
+  background-size: cover;
+  color: var(--pc-black);
+  text-align: center;
+  font-weight: 900;
+}
+
+.bonuses, .points {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  right: 2vmin;
+  top: 1vmin;
+  height: 8.5vmin;
+  width: 87.5vmin;
+
+  * {
+    transform: translateY(50%);
+    width: 4vmin;
+    height: 4vmin;
+    line-height: 4vmin;
+    z-index: 2;
+  }
+}
+
+.points {
+  align-items: flex-start;
+  top: 0;
+
+  * {
+    transform: translateY(-50%);
+  }
+}
+
+.point-marker {
+  text-align: center;
+  font-weight: 900;
+}

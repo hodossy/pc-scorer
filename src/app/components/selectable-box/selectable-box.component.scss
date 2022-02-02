@@ -1,0 +1,27 @@
+:host {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: var(--pc-white);
+  color: inherit;
+  width: 7.5vmin;
+  height: 7.5vmin;
+  line-height: 7.5vmin;
+  text-align: center;
+  border-radius: 1.5vmin;
+  font-weight: 900;
+  font-size: 4vmin;
+  letter-spacing: 0.5vmin;
+  cursor: pointer;
+
+  &.selected::after {
+    content: '\2715';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: var(--pc-black-light);
+    transform: scale(1.5);
+  }
+}

@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+  height: 12.75vmin;
+  background-color: var(--pc-grey);
+  padding-inline: 2.7vmin;
+}
+
+.bonus, .bonus-placeholder {
+  width: 8vmin;
+  height: 8vmin;
+  line-height: 8vmin;
+}
+
+.bonus {
+  margin-inline-end: 1.5vmin;
+}
+
+.bonus-placeholder {
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 4px solid var(--pc-white);
+  background-color: var(--pc-grey-light);
+}

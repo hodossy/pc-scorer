@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 0;
+  color: var(--pc-grey-dark);
+
+  .arrow-leg {
+    background-color: var(--pc-grey-dark);
+  }
+
+  &.right {
+    .arrow-leg {
+      height: 36%;
+      width: 100%;
+    }
+
+    svg {
+      height: 100%;
+    }
+  }
+
+  &.down {
+    flex-direction: column;
+
+    .arrow-leg {
+      width: 36%;
+      height: 100%;
+    }
+
+    svg {
+      width: 100%;
+    }
+  }
+}
+
+svg {
+  line-height: 0;
+}

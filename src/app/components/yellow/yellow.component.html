@@ -1,0 +1,37 @@
+<div class="board">
+  <div class="arrows">
+    <div class="horizontal">
+      <app-arrow></app-arrow>
+      <app-arrow></app-arrow>
+      <app-arrow></app-arrow>
+      <app-arrow></app-arrow>
+    </div>
+    <div class="vertical">
+      <app-arrow direction="down"></app-arrow>
+      <app-arrow direction="down"></app-arrow>
+      <app-arrow direction="down"></app-arrow>
+      <app-arrow direction="down"></app-arrow>
+    </div>
+    <app-arrow class="down-right"></app-arrow>
+  </div>
+  <div class="box-grid">
+    <app-selectable-box *ngFor="let box of boxes" [selected]="box.selected" [class.yellow-text]="box.value">
+      {{ box.value || '&#10006;' }}
+    </app-selectable-box>
+  </div>
+</div>
+<div class="bonus-container vertical-bonuses">
+  <span class="bonus-marker blue">&#10006;</span>
+  <span class="bonus-marker orange">4</span>
+  <span class="bonus-marker green">&#10006;</span>
+  <span class="fox"></span>
+</div>
+<div class="bonus-container horizontal-bonuses">
+  <span class="point-marker yellow">10</span>
+  <span class="point-marker yellow">14</span>
+  <span class="point-marker yellow">16</span>
+  <span class="point-marker yellow">20</span>
+</div>
+<div class="bonus-container diagonal">
+  <span class="bonus-marker">+1</span>
+</div>
