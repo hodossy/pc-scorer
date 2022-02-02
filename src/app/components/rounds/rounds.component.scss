@@ -68,3 +68,10 @@
   border-top-right-radius: 2vmin;
   border-bottom-right-radius: 2vmin;
 }
+
+.player {
+  background-image: url('assets/svgs/person.svg');
+  width: 2.75vmin;
+  height: 2.75vmin;
+  color: var(--pc-white);
+}

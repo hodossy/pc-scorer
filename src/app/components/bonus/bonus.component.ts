@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-bonus',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bonus.component.scss']
 })
 export class BonusComponent implements OnInit {
+  @Input() available: number = 0;
+  @Input() used: number = 0;
 
   constructor() { }
 

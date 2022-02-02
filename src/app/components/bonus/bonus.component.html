@@ -1,4 +1,4 @@
 <span class="bonus bonus-marker">
   <ng-content></ng-content>
 </span>
-<span class="bonus-placeholder" *ngFor="let bonus of [1, 2, 3, 4, 5, 6, 7]"></span>
+<span class="bonus-placeholder" *ngFor="let bonus of [1, 2, 3, 4, 5, 6, 7]" [class.available]="bonus <= available && bonus > used" [class.used]="bonus <= used"></span>

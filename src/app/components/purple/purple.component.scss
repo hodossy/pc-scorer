@@ -7,3 +7,20 @@
   color: var(--pc-purple);
   padding: 1vmin 2vmin;
 }
+
+.relations {
+  position: absolute;
+  top: 3vmin;
+  width: 87.5vmin;
+  display: flex;
+  gap: 4.5vmin;
+
+  img {
+    width: 3.5vmin;
+    z-index: 2;
+  }
+
+  span {
+    width: 1.5vmin;
+  }
+}

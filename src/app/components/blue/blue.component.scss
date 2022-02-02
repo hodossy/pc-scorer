@@ -77,7 +77,7 @@
     * {
       width: 4vmin;
       height: 4vmin;
-      line-height: 4vmin;
+      line-height: calc(4vmin - 4px);
       font-size: 2.25vmin;
     }
   }
@@ -93,7 +93,7 @@
   height: 7.5vmin;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   color: var(--pc-white);
   font-weight: 900;
   text-align: center;
@@ -104,8 +104,8 @@
   }
 
   span {
-    width: 3vmin;
-    height: 3vmin;
-    line-height: 3vmin;
+    width: 3.25vmin;
+    height: 3.25vmin;
+    line-height: 3.25vmin;
   }
 }

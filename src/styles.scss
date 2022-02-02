@@ -23,6 +23,11 @@ html, body {
 body {
   display: grid;
   place-items: center;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .bonus-marker {
@@ -64,6 +69,17 @@ body {
   background-image: url('assets/svgs/fox.svg');
 }
 
+.refresh {
+  display: inline-grid;
+  place-items: center;
+}
+
+.refresh::after {
+  content: url('assets/svgs/refresh.svg');
+  width: 75%;
+  height: 80%;
+}
+
 .star {
   background-image: url('assets/svgs/star.svg');
   background-position: center;
@@ -102,6 +118,8 @@ body {
 }
 
 .point-marker {
+  -webkit-mask-image: url('assets/svgs/point.svg');
+  mask-image: url('assets/svgs/point.svg');
   text-align: center;
   font-weight: 900;
 }
